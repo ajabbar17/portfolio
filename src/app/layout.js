@@ -1,7 +1,25 @@
-import { Inter } from "next/font/google";
+import { Inter, Fjalla_One, Lilita_One } from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local";
 
-const inter = Inter({ subsets: ["latin"] });
+// Font files can be colocated inside of `app`
+const novaSemiBold = localFont({
+  src:[ {
+    path: "../../public/fonts/novaklasse-semibold-BF65f32c1d1314a.otf",
+    
+    weight: "700",
+  },  {
+    path: "../../public/fonts/Nova-Klasse-Regular.otf",
+    weight: "400",
+  },
+  {
+    path: "../../public/fonts/Nova-Klasse-Medium.otf",
+    weight: "500",
+  },
+],
+variable: "--font-nova",
+});
+const inter = Lilita_One({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +29,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={novaSemiBold.className}>{children}</body>
     </html>
   );
 }
