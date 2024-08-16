@@ -29,7 +29,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className='h-screen w-full relative flex  md:flex-col bg-[#000] pb-6 ' >
+    <div className='h-screen w-full relative flex  md:flex-col overflow-hidden bg-[#000] pb-6 ' >
       <Circle/>
         <Circle2/>
             <div className='w-full flex md:flex-row flex-col gap-0 md:gap-5 px-8 pt-3 ' id='main' style={{ overflow: 'hidden' }}>

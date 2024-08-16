@@ -15,8 +15,9 @@ const Hero = () => {
       y: 200,
       opacity: 0,
       duration: 1,
+      delay:0.5,
       ease: 'power3.out',
-      stagger: 0.3,
+      stagger: 0.6,
     });
   }, []);
 
@@ -26,7 +27,7 @@ const Hero = () => {
 
       <h1
         ref={(el) => elementsRef.current.push(el)}
-        className="z-10 whitespace-pre-wrap uppercase text-center md:text-start w-full text-2xl  md:text-5xl font-bold tracking-wide text-[#ECFB5C]"
+        className="z-50 whitespace-pre-wrap uppercase text-center md:text-start w-full text-2xl  md:text-5xl font-bold tracking-wide text-[#ECFB5C]"
         >
         Hi! I&apos;m a
       </h1>
@@ -61,12 +62,12 @@ const Hero = () => {
           </div>
       <GridPattern
         numSquares={30}
-        maxOpacity={0.5}
+        maxOpacity={0.4}
         duration={3}
         repeatDelay={0.5}
         className={cn(
           '[mask-image:radial-gradient(900px_circle_at_center,white,transparent)]',
-          'inset-x-0 inset-y-[-30%] h-[200%]',
+          'inset-x-0 inset-y-[-30%] h-[200%] z-0',
         )}
       />
     </div>

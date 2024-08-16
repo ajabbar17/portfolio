@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Circle from "@/components/Circle";
 import Footer from "@/components/Footer";
+import Footer2 from "@/components/Footer2";
 import Hero from "@/components/Hero";
 import GridPattern from "@/components/magicui/AnimatedGrid";
 import { VelocityScroll } from "@/components/magicui/Scroll";
@@ -19,7 +20,8 @@ export default function Home() {
      <Skills/>
      <VelocityScroll className="text-6xl md:text-8xl  py-2 font-bold text-[#ECFB5C] uppercase" text="Projects" />
      <Projects/>
-      <Footer/>
+      {/* <Footer/> */}
+      <Footer2/>
       </main>
   );
 }

@@ -3,13 +3,14 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Link from 'next/link';
+import { useGSAP } from '@gsap/react';
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {
   const portfolioRef = useRef(null);
 
-  useEffect(() => {
+  useGSAP(() => {
     const letters = portfolioRef.current.querySelectorAll('.letter');
 
     gsap.fromTo(
@@ -18,12 +19,13 @@ const Footer = () => {
       {
         y: '0%',
         opacity: 1,
-        stagger: 0.035,
+        stagger: 0.09,
         ease: 'power4.out',
         scrollTrigger: {
           trigger: portfolioRef.current,
-          start: 'top 96%', // Start when the top of the footer is 75% from the top of the viewport
-          end: 'top 73%', // End when the top of the footer is 30% from the top of the viewport
+
+          start: 'top 80%', // Start when the top of the footer is 75% from the top of the viewport
+          end: 'top 60%', // End when the top of the footer is 30% from the top of the viewport
           scrub: true,
         },
       }
@@ -33,12 +35,12 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className='w-full items-center  justify-center flex overflow-hidden  pb-16'>
+    <div             ref={portfolioRef}
+    className='w-full items-center  justify-center flex overflow-hidden  pb-16'>
       <footer className="bg-[#3d0000] w-[94%] md:h-80 flex justify-center items-center md:w-[85%] py-8 rounded-3xl">
         <div className="w-full mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse rounded-lg">
           <h1
             className="text-white text-4xl md:text-5xl lg:text-9xl font-semibold text-center"
-            ref={portfolioRef}
           >
             {'PORTFOLIO'.split('').map((letter, index) => (
               <span key={index} className="letter inline-block">
