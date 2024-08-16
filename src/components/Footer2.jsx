@@ -47,7 +47,7 @@ const Footer2 = () => {
         <div className="border-t border-[#fff] pt-8 flex flex-col md:flex-row justify-between">
           <div className="mb-8 flex flex-col w-auto md:w-1/2 md:mb-0">
             <p className="text-lg mb-4">
-              TRANSFORMING IDEAS INTO IMPACTFUL PRODUCTS. LET'S COLLABORATE ON YOUR NEXT INNOVATION!
+              TRANSFORMING IDEAS INTO IMPACTFUL PRODUCTS. LET&apos;S COLLABORATE ON YOUR NEXT INNOVATION!
             </p>
             <button className="flex items-center justify-center px-6 py-2 border md:w-1/3 border-[#ffffff83] rounded hover:bg-[#000] outline-none hover:text-white transition-all">
               CONTACT ME
