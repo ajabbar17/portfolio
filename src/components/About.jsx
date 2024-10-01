@@ -50,12 +50,13 @@ const About = () => {
     <div className="bg-black py-20" id="about">
       <div className="overflow-hidden">
         <h1 ref={ref2} className="text-[#ECFB5C]    text-4xl md:text-8xl text-center">
-        {'ABOUT-'.split('').map((letter, index) => (
+        {'ABOUT'.split('').map((letter, index) => (
               <span key={index} className="letter  inline-block">
                 {letter}
               </span>
             ))}
-            
+              <span className="inline-block">&nbsp;</span> {/* This adds a space between "SAY" and "HELLO!" */}
+
             {'ME'.split('').map((letter, index) => (
               <span key={index} className="letter inline-block">
                 {letter}

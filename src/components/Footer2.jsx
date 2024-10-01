@@ -23,8 +23,8 @@ const Footer2 = () => {
         ease: 'power4.out',
         scrollTrigger: {
           trigger: portfolioRef.current,
-          start: 'top 90%',
-          end: 'top 56%',
+          start: 'top 87%',
+          end: 'top 45%',
           scrub: true,
         },
       }
