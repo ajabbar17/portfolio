@@ -114,7 +114,7 @@ export function GridPattern({
         {squares.map(({ pos: [x, y], id }, index) => (
           <motion.rect
             initial={{ opacity: 0 }}
-            animate={{ opacity: maxOpacity }}
+            animate={{ opacity: maxOpacity,zIndex: 1 }}
             transition={{
               duration,
               repeat: 1,
