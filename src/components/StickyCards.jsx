@@ -65,7 +65,7 @@ const StickyCards = () => {
                 </div>
                 
                 <div className="space-y-2 sm:space-y-3">
-                  <h3 className="text-lg sm:text-xl font-semibold text-[#ECFB5C]">
+                  <h3 className="text-lg sm:text-xl font-semibold text-white">
                     Technologies Used:
                   </h3>
                   <div className="flex flex-wrap gap-2">

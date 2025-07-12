@@ -88,7 +88,7 @@ export function GridPattern({
       ref={containerRef}
       aria-hidden="true"
       className={cn(
-        "pointer-events-none absolute inset-0  h-full w-full fill-red-600 stroke-gray-400/30",
+        "pointer-events-none absolute inset-0 z-0  h-full w-full fill-red-600 stroke-gray-400/30",
         className,
       )}
       {...props}
@@ -101,10 +101,12 @@ export function GridPattern({
           patternUnits="userSpaceOnUse"
           x={x}
           y={y}
+          z={0}
         >
           <path
             d={`M.5 ${height}V.5H${width}`}
             fill="none"
+            z={0}
             strokeDasharray={strokeDasharray}
           />
         </pattern>
@@ -129,6 +131,7 @@ export function GridPattern({
             y={y * height + 1}
             fill="yellow"
             strokeWidth="0"
+            z={0}
           />
         ))}
       </svg>
