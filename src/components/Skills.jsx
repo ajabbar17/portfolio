@@ -23,6 +23,8 @@ const Skills = () => {
     { name: 'Firebase', icon: <RiFirebaseFill className='text-[#F5820B]'/> },
   ];
 
+  
+
   useEffect(() => {
     gsap.fromTo(
       ".service-item",
@@ -35,7 +37,7 @@ const Skills = () => {
         stagger: 0.2, // Adds stagger
         scrollTrigger: {
           trigger: ".service-item",
-          start: 'top 70%',
+          start: 'top 90%',
           toggleActions: "play none none none",
         },
         clearProps: 'all' // Clear all applied properties after animation completes

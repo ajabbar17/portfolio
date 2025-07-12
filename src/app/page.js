@@ -8,6 +8,7 @@ import { VelocityScroll } from "@/components/magicui/Scroll";
 import { FloatingNavDemo } from "@/components/Navbar";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
+import StickyCards from "@/components/StickyCards";
 import { cn } from "@/lib/utils";
 
 
@@ -19,7 +20,8 @@ export default function Home() {
      <About/>
      <Skills/>
      <VelocityScroll className="text-6xl md:text-8xl  py-2 font-bold text-[#ECFB5C] uppercase" text="Projects" />
-     <Projects/>
+     {/* <Projects/> */}
+     <StickyCards/>
       {/* <Footer/> */}
       <Footer2/>
       </main>
